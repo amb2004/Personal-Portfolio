@@ -1,0 +1,84 @@
+.contact-form{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 9rem;
+}
+
+.c-right{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+
+.c-right> form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.c-right .user{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3em;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea{
+    height: 4rem!important;
+}
+
+.c-blur1{
+    top: 1rem;
+    left: 15rem;
+}
+
+.s-blur{
+    top: 12rem;
+    left: -20em;
+}
+
+
+  /* Adjustments for smaller screens */
+@media screen and (max-width: 480px) {
+    .contact-form {
+      padding: 1rem; /* Add padding on all sides */
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center items on smaller screens */
+      height: auto; /* Remove fixed height */
+      margin-top: 1rem; /* Adjust top margin */
+    }
+  
+    .c-right {
+      width: 100%; /* Make the form take the full width */
+    }
+  
+    .c-right>form {
+      width: 100%; /* Make the form take the full width */
+    }
+  
+    .c-blur1 {
+      top: 0; /* Adjust position */
+      left: 0; /* Adjust position */
+    }
+  
+    .s-blur {
+      top: 1.5rem; /* Adjust position */
+      left: 0; /* Adjust position */
+    }
+  
+    .c-right .user {
+      width: 100%; /* Make input fields full-width */
+      max-width: 20rem; /* Limit the maximum width */
+    }
+  
+    textarea {
+      height: auto; /* Remove fixed height */
+    }
+  }
+  
